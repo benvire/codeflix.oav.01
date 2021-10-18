@@ -2,7 +2,7 @@ const { listenerCount } = require('events');
 const fs = require('fs')
 const arg = process.argv[2]
 const variableReg = /[a-zA-Z_]+=.+/gm
-let file = `../oav.01/${arg}.JSON`
+
 
 
 fs.readFile(arg, 'utf8' , (err, data) => {
