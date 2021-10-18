@@ -23,4 +23,5 @@ fs.readFile(arg, 'utf8' , (err, data) => {
     };
 
         fs.writeFileSync(`${arg}.JSON`, JSON.stringify(converted, null, 2));
+        console.log(`Votre fichier ${arg} a bien été convertit en ${arg}.JSON`);
 });
